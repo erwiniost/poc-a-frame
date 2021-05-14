@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@4.0.0/dist/aframe-animation-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #ECECEC">
+      <a-camera>
+          <a-cursor></a-cursor>
+      </a-camera>
+      
+      <a-entity position="0 1.8 -1" scale="0.5 0.5 1"
+                text="value: Esto es una Prueba\nPasaremos al siguiente nivel;
+                color: #212121;
+                width: 1;
+                align: center;
+                wrapCount: 20"
+                geometry="primitive: plane; width:auto; height:auto"
+                material="color: #DDDDDD; shader: flat; visible: true"></a-entity>
+      <a-box position="0 0.5 -4" color="#FFAA00"></a-box>
+    </a-scene>
+  </body>
+</html>

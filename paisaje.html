@@ -7,12 +7,13 @@
   </head>
   <body>
     <a-scene>
-      <a-sky src="https://cdn.glitch.com/4ecdf8f9-3350-448e-94b4-532a2d1fd489%2F51130276509_f85c1e4c02_o.png?v=1620962760595" radius="30"></a-sky>
-
-      <a-sphere src="https://cdn.glitch.com/4ecdf8f9-3350-448e-94b4-532a2d1fd489%2Fcubes.jpg?v=1620963008980" radius="0.5" position="0 0.5 -3"></a-sphere>
+      <a-asset>
+          <img src="https://cdn.glitch.com/4ecdf8f9-3350-448e-94b4-532a2d1fd489%2F51130276509_f85c1e4c02_o.png?v=1620962760595" id="cielo">
+          <img src="https://cdn.glitch.com/4ecdf8f9-3350-448e-94b4-532a2d1fd489%2Fcubes.jpg?v=1620963008980" id="textura">
+      </a-asset>
+      <a-sky  radius="30" src="#cielo"></a-sky>
+      <a-sphere  radius="0.5" position="0 0.5 -3" src="#textura"></a-sphere>
       
-      
-
       <a-light type="ambient" color="#666"></a-light>
       <a-light type="point" intensity="" position="2 4 4"></a-light>
     </a-scene>
